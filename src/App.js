@@ -15,6 +15,7 @@ function App() {
           <Route path='/inicio' exact component={Inicio}/>
           <Route path='/nosotros' exact component={nosotros}/>
           <Route path='/tienda' exact component={Tienda}/>
+          
         </Routes>
       </Router>
 
