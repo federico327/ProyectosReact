@@ -1,9 +1,9 @@
 import React from 'react'
 
-const nosotros = () => {
+const nosotros = (nosotros) => {
   return (
     <div>
-        <h1>Pag nosotros</h1>
+        <h1>12345</h1>
 
     </div>
   )

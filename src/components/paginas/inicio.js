@@ -1,11 +1,11 @@
 import React from 'react'
 
-const inicio = () => {
+const inicio = (inicio) => {
   return (
+    
     <div>
-        <h1>Pag inicio</h1>
-
-
+        <h1>hola 123</h1>
+        
 
     </div>
   )

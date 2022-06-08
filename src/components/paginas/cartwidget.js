@@ -1,6 +1,6 @@
 import React from 'react'
 
-const cartwidget = () => {
+const cartwidget = (cartwidget) => {
   return (
     <div>cartwidget</div>
   )

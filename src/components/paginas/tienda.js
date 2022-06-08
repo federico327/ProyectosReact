@@ -1,9 +1,9 @@
 import React from 'react'
 
-const tienda = () => {
+const tienda = (tienda) => {
   return (
     <div>
-        <h1>Pag tienda</h1>
+        <h1>123</h1>
 
     </div>  
   )
