@@ -11,4 +11,4 @@ const inicio = (inicio) => {
   )
 }
 
-export default inicio
+export default inicio;

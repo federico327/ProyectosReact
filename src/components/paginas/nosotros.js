@@ -9,4 +9,4 @@ const nosotros = (nosotros) => {
   )
 }
 
-export default nosotros
+export default nosotros;

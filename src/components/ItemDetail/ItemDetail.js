@@ -1,14 +1,29 @@
-import { useState } from "react"
+import { React, useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount/ItemCount"
+import { CartContext } from "../Cart/CartContext"
 
-const ItemDetail = ({producto}) => {
+function ItemDetail ({producto})  {
+
     const [estado, setEstado] = useState()
+    const {AddToCart} = useContext(CartContext);
+
     const onAdd = (cant) => {
+        AddToCart(producto, cant)
+        
+        
+        
+
+
         console.log(cant)
-        setEstado(cant)
-    }
+        setEstado (cant)
+
+    } 
     
+
+
+
+
     return (
         <div className="row">
             <div className="col-md-6 mt-5">
@@ -25,13 +40,13 @@ const ItemDetail = ({producto}) => {
                         {
                             estado ?
 
-                            <Link to="../cart/cart">
-                                <button className="agregar">Ir al Carrito</button>
+                            <Link to="/Cart">
+                            <button className="agregar">Ir al Carrito</button>
                             </Link>
 
                             :
                             <ItemCount  initial={1} stock={10} onAdd={onAdd} />
-                        }
+                        }                        
                     </div>
                 </div>
             </div>

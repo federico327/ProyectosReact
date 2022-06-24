@@ -9,4 +9,4 @@ const tienda = (tienda) => {
   )
 }
 
-export default tienda
+export default tienda;

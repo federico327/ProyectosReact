@@ -19,15 +19,18 @@ const ItemCount = ({stock, initial, onAdd }) => {
   const agregar = () => {
     onAdd(count)
   };
+
  
   return (
     <div className="counter">
-      <h1>contador</h1>
-      <span className="counter__output">{count}</span>
+
+      <span className="counter__output">
+        {count}
+      </span>
       <div className="btn__container">
-        <button className="control__btn" onClick={increase}>+</button>
         <button className="control__btn" onClick={decrease}>-</button>
-        <button className="reset" onClick={agregar}>Agregar</button>
+        <button className="control__btn" onClick={increase}>+</button>
+        <button className="agregar" onClick={agregar}>Comprar</button>
       </div>
     </div>
   );
