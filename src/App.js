@@ -8,7 +8,7 @@ import Nosotros from './components/paginas/nosotros'
 
 import ItemCount from './components/ItemCount/ItemCount'
 import ItemDetailConatainer from './components/ItemDetail/ItemDetailContainer'
-import CartContextProvider from './components/Cart/CartContext'
+import CartContextProvider from '../src/context/CartContext'
 import Cart from "./components/Cart/Cart"
 import ItemListContainer from './conteiners/ItemListContainer'
 
