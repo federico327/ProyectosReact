@@ -56,7 +56,7 @@ const ItemListContainer = () => {
 
     
    
-    useEffect(()=>{
+/*     useEffect(()=>{
         if (categoriaId) {
             getFetch()
             .then((resp)=> {
@@ -72,7 +72,7 @@ const ItemListContainer = () => {
         }
         
     }, [categoriaId])
-
+ */
    
    
     return (
