@@ -6,7 +6,7 @@ let productos=[
       nombre:'Chupelatin',
       desc:'El más rico chupetín de chocolate con leche decorado con chocolate blanco y semiamargo.',
       foto: 'http://d3ugyf2ht6aenh.cloudfront.net/stores/602/902/products/chupelatin1-20e6977e614603e90415644965566638-640-0.jpg',
-      precio: "1.809"
+      precio: "1809"
   },
   
   {
@@ -15,7 +15,7 @@ let productos=[
       nombre:'Paraguita',
       desc:'Delicioso chupetín a base de cacao con forma de paragüita.',
       foto: 'https://http2.mlstatic.com/D_NQ_NP_689527-MLA41546660651_042020-O.jpg',
-      precio: "1.229"
+      precio: "1229"
   },
   
   {

@@ -2,10 +2,10 @@ import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import ItemDetail from "./ItemDetail"
 import { getFetchOne } from "../../helpers/getFetch"
-import { collection, doc, getDocs, getFirestore, limit, orderBy, query, where } from 'firebase/firestore'
+import { collection, getDocs, getFirestore, limit, orderBy, query, where, doc } from 'firebase/firestore'
 
 const ItemDetailConatainer = () => {
-    const [producto, setProducto] = useState({})
+    const [producto, setProductos, setLoading] = useState({})
     const { id } = useParams()
 
 
@@ -16,14 +16,14 @@ const ItemDetailConatainer = () => {
     useEffect(()=>{
         const db = getFirestore()
         const queryCollection = collection(db, 'productos')
-        const queryCollectionFilter = query( queryCollection, where('precio', '>', 1000), limit(2), orderBy('precio', 'desc') )
+        const queryCollectionFilter = query( queryCollection, where('precio', '>', 1), limit(2), orderBy('precio', 'desc') )
         getDocs(queryCollectionFilter)
         .then(data=> setProductos(data.docs.map(producto => ({ id: producto.id, ...producto.data() }))))
         .catch(err => console.log(err))
         .finally(()=> setLoading(false))
     })
 
-    console.log(productos)
+    console.log(producto)
 
 
 
